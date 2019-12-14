@@ -27,7 +27,7 @@ class Todo extends React.Component {
 
   onChange = e => {
     if (e.target.value !== "") return this.setState({ text: e.target.value });
-    else return null;
+    else return this.setState({ text: "" });
   };
 
   //complete taks or undo
